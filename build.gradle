@@ -1,0 +1,20 @@
+buildscript {
+    apply from: rootProject.file('dependencies.gradle')
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath deps.gradlePlugins.android
+        classpath deps.gradlePlugins.kotlin
+        classpath deps.gradlePlugins.bintray
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
